@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My Test Suite" parallel="classes" thread-count="2">
+    <test name="Parallel Test 1">
+        <classes>
+            <class name="internetherokuapp.LoginTest"/>
+        </classes>
+    </test>
+    <test name="Parallel Test 2">
+        <classes>
+            <class name="internetherokuapp.FileUploadTest"/>
+        </classes>
+    </test>
+    <test name="Parallel Test 3">
+        <classes>
+            <class name="internetherokuapp.MissingElementTest"></class>
+        </classes>
+    </test>
+</suite>
